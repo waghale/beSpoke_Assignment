@@ -47,7 +47,7 @@ fun WelcomeScreen(navController: NavController) {
                 color = Color.Black,
                 fontSize = 16.sp,
                 modifier = Modifier.clickable {
-                    navController.navigate("home_screen") // replace with your route
+                    navController.navigate("dashboard_screen") // replace with your route
                 }
             )
         }
@@ -111,7 +111,7 @@ fun WelcomeScreen(navController: NavController) {
 
             Button(
                 onClick = {
-                    navController.navigate("home_screen") // navigate to HomeScreen
+                    navController.navigate("dashboard_screen") // navigate to HomeScreen
                 },
                 modifier = Modifier
                     .fillMaxWidth()

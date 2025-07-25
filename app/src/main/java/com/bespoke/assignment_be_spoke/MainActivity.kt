@@ -21,6 +21,7 @@ import androidx.core.view.WindowInsetsControllerCompat
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.ui.Modifier
+import com.bespoke.assignment_be_spoke.screen.DashboardScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,8 +48,8 @@ class MainActivity : ComponentActivity() {
                         composable("welcome_screen") {
                             WelcomeScreen(navController)
                         }
-                        composable("home_screen") {
-                            HomeScreen()
+                        composable("dashboard_screen") {
+                            DashboardScreen()
                         }
                     }
                 }
